@@ -1,14 +1,35 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      GitHub
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content class="home" padding>
-  Hello User.
-  <p>
-    Welcome to IONIC2 world.
-  </p>
+<ion-content class="home">
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input [(ngModel)]="username" type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+  <div padding>
+    <button block (click)="getRepos()">Search</button>
+  </div>
+  <div *ngIf="isSuccess===false" align="center">
+    Please enter correct username
+  </div>
+  <div *ngIf="isSuccess" align="center">
+    <div *ngIf="reposData.length===0">
+      No Repos found.
+    </div>
+    <ion-card *ngFor="let repo of reposData">
+      <ion-card-header>
+        {{ repo.name }}
+      </ion-card-header>
+      <ion-card-content>
+        {{ repo.description }}
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
