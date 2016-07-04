@@ -11,11 +11,6 @@
       <change type="DELETED" beforePath="D:\ionic2\ionic2-github\.idea\modules.xml" afterPath="" />
       <change type="DELETED" beforePath="D:\ionic2\ionic2-github\.idea\typescript-compiler.xml" afterPath="" />
       <change type="DELETED" beforePath="D:\ionic2\ionic2-github\.idea\vcs.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.ts" afterPath="$PROJECT_DIR$/app/app.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/github-details/github-details.ts" afterPath="$PROJECT_DIR$/app/pages/github-details/github-details.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/githubService.ts" afterPath="$PROJECT_DIR$/app/services/githubService.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/pages/home/home.ts" afterPath="$PROJECT_DIR$/app/pages/home/home.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ionic2-github.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,8 +54,8 @@
       <file leaf-file-name="githubService.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/services/githubService.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.4438642">
-              <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.4673629">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -491,8 +486,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/services/githubService.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4438642">
-          <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.4673629">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
