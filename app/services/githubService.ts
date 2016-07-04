@@ -13,4 +13,10 @@ export class GitHubService{
         return repos;
     }
 
+    getGitDetails(repo) {
+        let headers = new Headers();
+        headers.append('Accept', 'application/vnd.github.VERSION.html');
+
+        return this.http.get(`${repo.url}/readme`, { headers: headers });
+    }
 }

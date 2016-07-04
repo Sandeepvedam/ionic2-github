@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar dark>
     <ion-title>
       GitHub
     </ion-title>
@@ -7,24 +7,25 @@
 </ion-header>
 
 <ion-content class="home">
-  <ion-list>
+  <h4 style="color:#003366;font-weight: 500;margin-left:15px">Please enter github username:</h4>
+
     <ion-item>
       <ion-label floating>Username</ion-label>
       <ion-input [(ngModel)]="username" type="text"></ion-input>
     </ion-item>
-  </ion-list>
+
   <div padding>
     <button block (click)="getRepos()">Search</button>
   </div>
-  <div *ngIf="isSuccess===false" align="center">
+  <div style="color:red" *ngIf="isSuccess===false" align="center">
     Please enter correct username
   </div>
-  <div *ngIf="isSuccess" align="center">
-    <div *ngIf="reposData.length===0">
+  <div *ngIf="isSuccess">
+    <div style="color:red" align="center" *ngIf="reposData.length===0">
       No Repos found.
     </div>
-    <ion-card *ngFor="let repo of reposData">
-      <ion-card-header>
+    <ion-card style="background-color:whitesmoke" *ngFor="let repo of reposData" (click)="goToDetails(repo)">
+      <ion-card-header style="color:#006666">
         {{ repo.name }}
       </ion-card-header>
       <ion-card-content>
